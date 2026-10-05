@@ -14,31 +14,33 @@ Chaque niveau propose un exercice guidé, avec :
 
 ## Coach
 
-Tony est le coach principal de C Quest. Il reprend la progression du joueur à partir de la sauvegarde, respecte les cours I1 et les étudiants de première année et continue le suivi pédagogique de bout en bout.
+Tony est le coach principal de C Quest. Il reprend la progression du joueur à partir de la sauvegarde, respecte les cours I1 et accompagne le suivi pédagogique de bout en bout.
 
 ## État actuel
 
-- Niveaux archivés : 1 à 6
-- Niveau courant : 7
+- Niveaux archivés : 1 à 8
+- Niveau courant : 8 (en cours)
 - Statut : en cours
-- Niveau global : 7
-- XP : 750
-- Niveau joueur : 2
-- Titre : 🧑‍💻 Débutant
+- Niveau global : 8
+- XP : 1050
+- Niveau joueur : 3
+- Titre : 🔧 Codeur en herbe
 
 ## Historique des niveaux validés
 
-1. Prénom et âge
-2. Calculatrice
-3. Somme de 1 à n
-4. Table de multiplication
-5. Pair ou impair
-6. Compteur de nombres pairs
+1. ✅ Prénom et âge
+2. ✅ Calculatrice
+3. ✅ Somme de 1 à n
+4. ✅ Table de multiplication
+5. ✅ Pair ou impair
+6. ✅ Compteur de nombres pairs
+7. ✅ Pyramide de nombres (boucles imbriquées)
+8. 🔄 Introduction aux tableaux (en cours)
 
-## Niveau 7 : en cours
+## Niveau actuel : 8
 
 Objectif :
-Afficher une pyramide de nombres de 1 à n, une ligne après l'autre, en augmentant le nombre de colonnes.
+Créer un tableau, le remplir avec des valeurs saisies, puis l'afficher.
 
 ## Référence pédagogique
 
