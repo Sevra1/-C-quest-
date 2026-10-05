@@ -1,0 +1,19 @@
+.gitignore
+# Fichiers de compilation C
+*.o
+*.out
+*.exe
+*.obj
+*.bin
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.log
