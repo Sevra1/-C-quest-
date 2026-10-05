@@ -1,34 +1,12 @@
 # C Quest — History 0.1
 
-## C QUEST — HISTORY 0.1
-Dernière mise à jour : 30 septembre 2026
-Niveaux archivés : 1 à 5
+Dernière mise à jour : 5 octobre 2026
 
-### NIVEAU 1 — Prénom et âge
-Statut : VALIDÉ
+## NIVEAU 1 — Prénom et âge
+Statut : ✅ VALIDÉ
 
 Énoncé :
 Créer un programme qui demande le prénom et l'âge de l'utilisateur, puis les affiche.
-
-Code original :
-```c
-#include<stdio.h>
-#include<stdlib.h>
-
-int main()
-{
-char prenom[50];
-int age;
-printf("Quel est ton prénom ?\n");
-scanf("%s",prenom);
-printf("Quel est ton âge ?\n");
-scanf("%i",&age);
-printf("Bonjour %s, tu as %i ans.", prenom,age);
-}
-```
-
-Analyse :
-Programme fonctionnel. stdlib.h est inutile et return 0 peut être ajouté.
 
 Version corrigée :
 ```c
@@ -51,36 +29,13 @@ int main()
 }
 ```
 
-### NIVEAU 2 — Calculatrice
-Statut : VALIDÉ
+---
+
+## NIVEAU 2 — Calculatrice
+Statut : ✅ VALIDÉ
 
 Énoncé :
 Demander deux entiers et afficher leur somme, différence, produit et quotient.
-
-Code original :
-```c
-#include<stdio.h>
-
-int main()
-{
-    int a,b;
-    printf(" Somme : %i\n",somme);
-    scanf("%i",&a);
-    scanf("%i",&b);
-    int somme = a + b;
-    int diff = a - b;
-    int produit = a * b;
-    int quotient = a/b;
-
-    printf(" Somme : %i\n",somme);
-    printf(" Différence : %i\n",diff);
-    printf(" Produit : %i\n",produit);
-    printf(" Quotient : %i\n",quotient);
-}
-```
-
-Analyse :
-Le premier printf utilise somme avant sa déclaration. Le reste de la logique de calcul est correct.
 
 Version corrigée :
 ```c
@@ -110,32 +65,13 @@ int main()
 }
 ```
 
-### NIVEAU 3 — Somme de 1 à n
-Statut : VALIDÉ
+---
 
-Code original :
-```c
-#include<stdio.h>
+## NIVEAU 3 — Somme de 1 à n
+Statut : ✅ VALIDÉ
 
-int main()
-{
-    int n;
-    printf("Bonjour, veuillez saisir une valeur\n");
-    scanf("%i",&n);
-    int somme = 0;
-    int i;
-    for(i=1;i<=n;i++)
-    {
-         somme = somme + i;
-         printf("-%i\n",i);
-    }
-    printf("La somme de tout les chiffre allant de 1 jusqu'à %i est : %i\n",n,somme);
-    return 0;
-}
-```
-
-Analyse :
-Boucle et accumulation correctes. somme += i est une écriture plus courte possible.
+Énoncé :
+Demander n et calculer la somme de tous les nombres de 1 à n.
 
 Version corrigée :
 ```c
@@ -152,7 +88,6 @@ int main()
     for(int i = 1; i <= n; i++)
     {
         somme += i;
-        printf("%i\n", i);
     }
 
     printf("La somme des nombres allant de 1 jusqu'à %i est : %i\n", n, somme);
@@ -161,29 +96,13 @@ int main()
 }
 ```
 
-### NIVEAU 4 — Table de multiplication
-Statut : VALIDÉ
+---
 
-Code original :
-```c
-#include<stdio.h>
+## NIVEAU 4 — Table de multiplication
+Statut : ✅ VALIDÉ
 
-int main()
-{
-    int n;
-    printf("Bonjour, veuillez saisir une valeur\n");
-    scanf("%i",&n);
-    int i;
-    printf("Voici la table des %i :\n",n);
-    for(i=0;i<=10;i++)
-    {
-         printf("- %i * %i = %i\n",n,i,i*n);
-    }
-}
-```
-
-Analyse :
-La boucle est maîtrisée. Petite erreur : départ à 0 au lieu de 1.
+Énoncé :
+Demander n et afficher la table de multiplication de n.
 
 Version corrigée :
 ```c
@@ -207,48 +126,13 @@ int main()
 }
 ```
 
-### NIVEAU 5 — Pair ou impair
-Statut : VALIDÉ — DÉFI INTERMÉDIAIRE
+---
+
+## NIVEAU 5 — Pair ou impair
+Statut : ✅ VALIDÉ — DÉFI INTERMÉDIAIRE 🟡
 
 Énoncé :
 Demander n. Pour chaque nombre de 1 à n, indiquer pair/impair et calculer séparément les sommes paires et impaires.
-
-Code original :
-```c
-#include<stdio.h>
-
-int main()
-{
-    int n;
-
-    printf("Entrer un entier: ");
-    scanf("%i",&n);
-
-    int somme_pair = 0;
-    int somme_impair = 0;
-
-    for(int i=1;i<=n;i++)
-    {
-         int reste = i % 2;
-         if(reste == 0)
-         {
-             somme_pair += i;
-             printf("%i est pair\n",i);
-         }
-         else if(reste != 0)
-         {
-             somme_impair += i;
-             printf("%i est impair\n",i);
-         }
-    }
-
-    printf("Somme des chiffres pair: %i\n",somme_pair);
-    printf("Somme des chiffres impair: %i\n",somme_impair);
-}
-```
-
-Analyse :
-Programme correct. else if(reste != 0) peut être remplacé par else. Le modulo est correctement utilisé.
 
 Version corrigée :
 ```c
@@ -284,57 +168,114 @@ int main()
 }
 ```
 
-## PROFIL APRÈS LE NIVEAU 5
-- Niveau global : 6
-- XP : 650
-- Niveau joueur : 2
-- Titre : 🧑‍💻 Débutant
-- XP vers niveau joueur 3 : 650 / 1200
+XP gagnée : 150 XP
+Compétences : Conditions +½ ⭐, Modulo +½ ⭐
 
-### Compétences
+---
+
+## NIVEAU 6 — Compteur de nombres pairs
+Statut : ✅ VALIDÉ
+
+Énoncé :
+Demander n, parcourir les nombres de 1 à n, afficher uniquement les nombres pairs et compter combien de nombres pairs sont présents.
+
+Version corrigée :
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n, compteur = 0;
+
+    printf("Entrez un entier : ");
+    scanf("%i", &n);
+
+    printf("Nombres pairs : ");
+    for(int i = 1; i <= n; i++)
+    {
+        if(i % 2 == 0)
+        {
+            printf("%i ", i);
+            compteur++;
+        }
+    }
+
+    printf("\nTotal de nombres pairs : %i\n", compteur);
+
+    return 0;
+}
+```
+
+XP gagnée : 100 XP
+Compétences : Compteur ⭐
+
+---
+
+## NIVEAU 7 — Pyramide de nombres
+Statut : ✅ VALIDÉ
+
+Énoncé :
+Afficher une pyramide de nombres de 1 à n, en ligne par ligne, avec le nombre de colonnes qui augmente à chaque ligne.
+
+Exemple si n = 4 :
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+```
+
+Version corrigée :
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i, j, n;
+
+    printf("Entrez un entier: ");
+    scanf("%i", &n);
+
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("%i ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+XP gagnée : 125 XP (base 100 + bonus autonomie)
+Compétences : Boucle for +½ ⭐, Boucles imbriquées ⭐ (nouvelle)
+
+**Note pédagogique :** Le joueur a d'abord reçu un indice (indice 3) pour comprendre la logique des boucles imbriquées. Ensuite, il a consolidé sa compréhension avec un exercice de variation (Triangle avec étoiles) sans indice, démontrant la maîtrise réelle de la notion. Cette approche d'apprentissage guidé → consolidation autonome a été efficace.
+
+---
+
+## PROFIL ACTUEL
+- Niveau global : 8
+- XP totale : 1050 XP
+- Niveau joueur : 3
+- Progression vers niveau 4 : 1050 / 1200 XP (87.5%)
+- Titre : 🔧 Codeur en herbe
+
+## Compétences débloquées
 - Variables ⭐½
 - Entrées / sorties ⭐½
 - Opérations ⭐⭐
-- Boucle for ⭐⭐½
-- Conditions ⭐
-- Modulo ⭐
+- Boucle for ⭐⭐⭐½
+- Conditions ⭐½
+- Modulo ⭐½
+- Compteur ⭐
+- Boucles imbriquées ⭐½
 
-### Niveau 6 : en cours
+## Paliers atteints
+- ✅ Niveau 5 : 🟡 Défi intermédiaire
+- 🔄 Niveau 8 : En cours (Introduction aux tableaux)
 
-### JSON de sauvegarde
-```json
-{
-  "game_name": "C Quest",
-  "meta_prompt_version": "1.1",
-  "save_state_version": "0.2",
-  "history_version": "0.1",
-  "skill_xp_system_version": "0.2",
-  "player": {
-    "global_level": 6,
-    "xp": 650,
-    "player_level": 2,
-    "player_level_next_threshold": 1200,
-    "title": "🧑‍💻 Débutant"
-  },
-  "skills": {
-    "Variables": 1.5,
-    "Entrées / sorties": 1.5,
-    "Opérations": 2,
-    "Boucle for": 2.5,
-    "Conditions": 1,
-    "Modulo": 1
-  },
-  "current_level": 6,
-  "current_exercise": "Compteur de nombres pairs",
-  "planned_rewards": {
-    "base_xp": 100,
-    "skill_increases": {
-      "Boucle for": 0.5,
-      "Conditions": 0.5,
-      "Modulo": 0.5
-    },
-    "unlock": "Compteur",
-    "bonus": "variable selon la qualité de la solution"
-  }
-}
-```
+## Prochain exercice
+Niveau 8 : Introduction aux tableaux
