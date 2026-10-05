@@ -1,35 +1,37 @@
 # C Quest — Save State 0.2
 
-Date : 30 septembre 2026
+Date : 5 octobre 2026
 
 ## JOUEUR
-- Niveau global : 6
-- XP totale : 650 XP
+- Niveau global : 7
+- XP totale : 750 XP
 - Niveau de joueur : 2
-- Progression niveau joueur : 650 / 1200 XP
+- Progression niveau joueur : 750 / 1200 XP (62.5%)
 - Titre : 🧑‍💻 Débutant
 
+## DERNIER EXERCICE COMPLÉTÉ
+Niveau 6 — Compteur de nombres pairs ✅
+
 ## PROCHAIN EXERCICE
-Niveau 6 — Compteur de nombres pairs
+Niveau 7 — Pyramide de nombres
 
 Objectif :
-Demander n, parcourir les nombres de 1 à n, afficher uniquement les nombres pairs et compter combien de nombres pairs sont présents.
+Afficher une pyramide de nombres en utilisant des boucles imbriquées.
 
-## RÉCOMPENSES PRÉVUES
+## RÉCOMPENSES PRÉVUES (Niveau 7)
 - XP de base : +100 XP
 - Boucle for : +½ ⭐
-- Conditions : +½ ⭐
-- Modulo : +½ ⭐
-- Nouvelle compétence : Compteur ⭐
+- Boucles imbriquées : ⭐ (nouvelle compétence)
 - Bonus potentiel : variable selon la qualité de la solution.
 
 ## COMPÉTENCES DÉBLOQUÉES
 - Variables ⭐½
 - Entrées / sorties ⭐½
 - Opérations ⭐⭐
-- Boucle for ⭐⭐½
-- Conditions ⭐
-- Modulo ⭐
+- Boucle for ⭐⭐⭐
+- Conditions ⭐½
+- Modulo ⭐½
+- Compteur ⭐
 
 ## NIVEAUX TERMINÉS
 1 ✅
@@ -37,6 +39,7 @@ Demander n, parcourir les nombres de 1 à n, afficher uniquement les nombres pai
 3 ✅
 4 ✅
 5 ✅
+6 ✅
 
 ## PALIERS
 - Niveau 5 : 🟡 Défi intermédiaire — terminé
@@ -45,7 +48,7 @@ Demander n, parcourir les nombres de 1 à n, afficher uniquement les nombres pai
 - Niveau 100 : 👑 Boss
 
 ## PROJET « PROGRAMMER C QUEST »
-🔒 Verrouillé.
+🔒 Verrouillé jusqu'à maîtrise suffisante (Niveau 15 minimum recommandé).
 
 ## RÈGLES ACTIVES
 - Compétences dynamiques
