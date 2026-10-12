@@ -6,9 +6,12 @@ C Quest est un petit jeu d'entraînement en C conçu comme un parcours progressi
 
 Chaque niveau propose un exercice guidé, avec :
 - énoncé
-- code original
+- travail réel du joueur
+- code initial
 - analyse des erreurs
-- version corrigée
+- corrections intermédiaires
+- version finale du joueur
+- correction de référence
 - progression XP / compétences
 - progression du joueur
 
@@ -19,10 +22,10 @@ Tony est le coach principal de C Quest. Il reprend la progression du joueur à p
 ## État actuel
 
 - Niveaux archivés : 1 à 8
-- Niveau courant : 8 (en cours)
+- Niveau courant : 9 (en cours)
 - Statut : en cours
-- Niveau global : 8
-- XP : 1050
+- Niveau global : 9
+- XP : 1150
 - Niveau joueur : 3
 - Titre : 🔧 Codeur en herbe
 
@@ -35,12 +38,12 @@ Tony est le coach principal de C Quest. Il reprend la progression du joueur à p
 5. ✅ Pair ou impair
 6. ✅ Compteur de nombres pairs
 7. ✅ Pyramide de nombres (boucles imbriquées)
-8. 🔄 Introduction aux tableaux (en cours)
+8. ✅ Introduction aux tableaux
 
-## Niveau actuel : 8
+## Niveau actuel : 9
 
 Objectif :
-Créer un tableau, le remplir avec des valeurs saisies, puis l'afficher.
+Rechercher une valeur dans un tableau et indiquer si elle est présente.
 
 ## Référence pédagogique
 
@@ -48,7 +51,7 @@ Le projet s'appuie prioritairement sur les supports de cours, TD et TP du cours 
 
 ## Remarques
 
-Ce dépôt contient la version documentée du jeu, la sauvegarde de progression, le profil de Tony et les éléments pédagogiques nécessaires pour reprendre le jeu à tout moment.
+Le travail réel du joueur est conservé dans l'historique : essais, erreurs, corrections et version finale. Les consolidations restent intégrées au niveau concerné et ne créent pas de niveau bis séparé.
 
 ## Licence
 
