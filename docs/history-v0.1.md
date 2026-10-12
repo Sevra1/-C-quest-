@@ -1,6 +1,6 @@
 # C Quest — History 0.1
 
-Dernière mise à jour : 5 octobre 2026
+Dernière mise à jour : 12 octobre 2026
 
 ## NIVEAU 1 — Prénom et âge
 Statut : ✅ VALIDÉ
@@ -252,30 +252,165 @@ int main()
 XP gagnée : 125 XP (base 100 + bonus autonomie)
 Compétences : Boucle for +½ ⭐, Boucles imbriquées ⭐ (nouvelle)
 
-**Note pédagogique :** Le joueur a d'abord reçu un indice (indice 3) pour comprendre la logique des boucles imbriquées. Ensuite, il a consolidé sa compréhension avec un exercice de variation (Triangle avec étoiles) sans indice, démontrant la maîtrise réelle de la notion. Cette approche d'apprentissage guidé → consolidation autonome a été efficace.
+**Note pédagogique :** Le joueur a d'abord reçu un indice (indice 3) pour comprendre la logique des boucles imbriquées. Ensuite, il a consolidé sa compréhension avec un exercice de variation (Triangle avec étoiles) sans indice, démontrant la maîtrise réelle de la notion.
+
+---
+
+## NIVEAU 8 — Introduction aux tableaux
+Statut : ✅ VALIDÉ
+
+Énoncé :
+Demander un entier `n`, lire `n` valeurs entières dans un tableau, afficher le tableau, puis afficher sa première et sa dernière valeur.
+
+### Travail du joueur — premier essai
+
+Le joueur a d'abord écrit :
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+    int t[n];
+    printf("Entrez la taille du tableau : ");
+    scanf("%i",&n);
+    printf("Entrez les valeurs du tableau :\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%i",&t[i]);
+        printf("La valeur %i est : %i\n", i+1, t[i]);
+    }
+    printf("Tableau : %i\n", t[n]);
+}
+```
+
+### Difficultés repérées
+
+- Le tableau était déclaré avant la lecture de `n`.
+- `t[n]` est en dehors du tableau : pour `n` cases, les indices vont de `0` à `n - 1`.
+- Une deuxième boucle était nécessaire pour afficher toutes les cases.
+
+### Première correction du joueur
+
+Le joueur a ensuite déplacé la déclaration du tableau après la lecture de `n` et ajouté une boucle d'affichage :
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+
+    printf("Entrez la taille du tableau : ");
+    scanf("%i",&n);
+
+    int t[n];
+
+    printf("Entrez les valeurs du tableau :\n");
+
+    for(i=0;i<n;i++)
+    {
+        scanf("%i",&t[i]);
+        printf("La valeur %i est : %i\n", i+1, t[i]);
+    }
+
+    printf("Tableau : ");
+
+    for (i=0;i<n;i++)
+    {
+        printf("%i, ",t[i]);
+    }
+}
+```
+
+### Version finale du joueur
+
+Le joueur a ensuite supprimé l'affichage intermédiaire et ajouté l'affichage de la première et de la dernière valeur :
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+
+    printf("Entrez la taille du tableau : ");
+    scanf("%i",&n);
+
+    int t[n];
+
+    printf("Entrez les valeurs du tableau :\n");
+
+    for(i=0;i<n;i++)
+    {
+        scanf("%i",&t[i]);
+    }
+
+    printf("Tableau : ");
+
+    for (i=0;i<n;i++)
+    {
+        printf("%i, ",t[i]);
+    }
+
+    printf("\n");
+
+    for (i=0;i<n;i++)
+    {
+        if(i==0)
+        {
+            printf("La première valeur du tableau est : %i\n",t[0]);
+        }
+
+        if(i==n-1)
+        {
+            printf("La dernière valeur du tableau est : %i\n",t[i]);
+        }
+    }
+}
+```
+
+### Correction de référence
+
+La solution du joueur est fonctionnelle. Une version plus directe peut afficher les extrémités après la boucle, sans parcourir une troisième fois le tableau :
+```c
+printf("Première valeur : %i\n", t[0]);
+printf("Dernière valeur : %i\n", t[n - 1]);
+```
+
+### Ce qui a été appris
+
+- Déclarer le tableau après avoir obtenu sa taille.
+- Comprendre que les indices commencent à `0`.
+- Utiliser `t[0]` pour la première case.
+- Utiliser `t[n - 1]` pour la dernière case.
+- Utiliser une boucle pour remplir un tableau et une autre pour l'afficher.
+
+XP gagnée : 100 XP
+Compétences : Tableau ⭐, Boucle for +½ ⭐
 
 ---
 
 ## PROFIL ACTUEL
-- Niveau global : 8
-- XP totale : 1050 XP
+- Niveau global : 9
+- XP totale : 1150 XP
 - Niveau joueur : 3
-- Progression vers niveau 4 : 1050 / 1200 XP (87.5%)
+- Progression vers niveau 4 : 1150 / 1200 XP (95.8%)
 - Titre : 🔧 Codeur en herbe
 
 ## Compétences débloquées
 - Variables ⭐½
 - Entrées / sorties ⭐½
 - Opérations ⭐⭐
-- Boucle for ⭐⭐⭐½
+- Boucle for ⭐⭐⭐⭐
 - Conditions ⭐½
 - Modulo ⭐½
 - Compteur ⭐
 - Boucles imbriquées ⭐½
+- Tableau ⭐
 
 ## Paliers atteints
 - ✅ Niveau 5 : 🟡 Défi intermédiaire
-- 🔄 Niveau 8 : En cours (Introduction aux tableaux)
+- ✅ Niveau 8 : Introduction aux tableaux
+- 🔄 Niveau 9 : En cours
 
 ## Prochain exercice
-Niveau 8 : Introduction aux tableaux
+Niveau 9 : Recherche d'une valeur dans un tableau
