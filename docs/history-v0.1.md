@@ -218,11 +218,11 @@ Statut : ✅ VALIDÉ
 Afficher une pyramide de nombres de 1 à n, en ligne par ligne, avec le nombre de colonnes qui augmente à chaque ligne.
 
 Exemple si n = 4 :
-```
-1 
-1 2 
-1 2 3 
-1 2 3 4 
+```text
+1
+1 2
+1 2 3
+1 2 3 4
 ```
 
 Version corrigée :
@@ -264,7 +264,6 @@ Demander un entier `n`, lire `n` valeurs entières dans un tableau, afficher le 
 
 ### Travail du joueur — premier essai
 
-Le joueur a d'abord écrit :
 ```c
 #include <stdio.h>
 
@@ -292,7 +291,6 @@ int main()
 
 ### Première correction du joueur
 
-Le joueur a ensuite déplacé la déclaration du tableau après la lecture de `n` et ajouté une boucle d'affichage :
 ```c
 #include <stdio.h>
 
@@ -324,7 +322,6 @@ int main()
 
 ### Version finale du joueur
 
-Le joueur a ensuite supprimé l'affichage intermédiaire et ajouté l'affichage de la première et de la dernière valeur :
 ```c
 #include <stdio.h>
 
@@ -370,7 +367,7 @@ int main()
 
 ### Correction de référence
 
-La solution du joueur est fonctionnelle. Une version plus directe peut afficher les extrémités après la boucle, sans parcourir une troisième fois le tableau :
+La solution du joueur est fonctionnelle. Une version plus directe peut afficher les extrémités après la boucle :
 ```c
 printf("Première valeur : %i\n", t[0]);
 printf("Dernière valeur : %i\n", t[n - 1]);
@@ -389,7 +386,141 @@ Compétences : Tableau ⭐, Boucle for +½ ⭐
 
 ---
 
+# ANNEXE — CODES RÉELS DU JOUEUR, NIVEAUX 1 À 5
+
+Cette annexe conserve les codes envoyés par le joueur afin de permettre la comparaison entre son travail original et la correction de référence.
+
+## Niveau 1 — Code original du joueur
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    char prenom[50];
+    int age;
+    printf("Quel est ton prénom ?\n");
+    scanf("%s",prenom);
+    printf("Quel est ton âge ?\n");
+    scanf("%i",&age);
+    printf("Bonjour %s, tu as %i ans.", prenom,age);
+}
+```
+
+Comparaison : le code remplit correctement l'objectif. La correction de référence ajoute principalement `return 0;` et une fin de ligne dans le dernier affichage.
+
+## Niveau 2 — Code original du joueur
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+    printf(" Somme : %i\n",somme);
+    scanf("%i",&a);
+    scanf("%i",&b);
+    int somme = a + b;
+    int diff = a - b;
+    int produit = a * b;
+    int quotient = a/b;
+
+    printf(" Somme : %i\n",somme);
+    printf(" Différence : %i\n",diff);
+    printf(" Produit : %i\n",produit);
+    printf(" Quotient : %i\n",quotient);
+}
+```
+
+Difficulté repérée : `somme` est utilisée dans le premier `printf` avant sa déclaration et son calcul. La saisie des deux valeurs et les calculs sont ensuite structurés correctement.
+
+## Niveau 3 — Code original du joueur
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    printf("Bonjour, veuillez saisir une valeur\n");
+    scanf("%i",&n);
+    int somme = 0;
+    int i;
+    for(i=1;i<=n;i++)
+    {
+         somme = somme + i;
+         printf("-%i\n",i);
+    }
+    printf("La somme de tout les chiffre allant de 1 jusqu'à %i est : %i\n",n,somme);
+    return 0;
+}
+```
+
+Comparaison : la logique de somme et la boucle sont correctes. Le joueur affiche également chaque valeur parcourue, ce qui permet de vérifier le déroulement de l'algorithme.
+
+## Niveau 4 — Code original du joueur
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    printf("Bonjour, veuillez saisir une valeur\n");
+    scanf("%i",&n);
+    int i;
+    printf("Voici la table des %i :\n",n);
+    for(i=0;i<=10;i++)
+    {
+         printf("- %i * %i = %i\n",n,i,i*n);
+    }
+}
+```
+
+Comparaison : la table est calculée correctement. Le parcours commence à `0`, donc la sortie inclut `n × 0`; la correction de référence commence à `1` pour suivre l'exercice classique de table de multiplication.
+
+## Niveau 5 — Code original du joueur
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n;
+
+    printf("Entrer un entier: ");
+    scanf("%i",&n);
+
+    int somme_pair = 0;
+    int somme_impair = 0;
+
+    for(int i=1;i<=n;i++)
+    {
+         int reste = i % 2;
+         if(reste == 0)
+         {
+             somme_pair += i;
+             printf("%i est pair\n",i);
+         }
+
+         else if(reste != 0)
+         {
+             somme_impair += i;
+             printf("%i est impair\n",i);
+         }
+    }
+
+    printf("Somme des chiffres pair: %i\n",somme_pair);
+    printf("Somme des chiffres impair: %i\n",somme_impair);
+}
+```
+
+Comparaison : la logique est correcte. Le joueur a explicitement stocké le reste du modulo dans `reste`. Le `else if(reste != 0)` fonctionne ici ; un `else` simple aurait toutefois suffi puisque le seul autre cas après `reste == 0` est un reste différent de zéro.
+
+---
+
 ## PROFIL ACTUEL
+
 - Niveau global : 9
 - XP totale : 1150 XP
 - Niveau joueur : 3
@@ -397,6 +528,7 @@ Compétences : Tableau ⭐, Boucle for +½ ⭐
 - Titre : 🔧 Codeur en herbe
 
 ## Compétences débloquées
+
 - Variables ⭐½
 - Entrées / sorties ⭐½
 - Opérations ⭐⭐
@@ -408,9 +540,13 @@ Compétences : Tableau ⭐, Boucle for +½ ⭐
 - Tableau ⭐
 
 ## Paliers atteints
+
 - ✅ Niveau 5 : 🟡 Défi intermédiaire
+- ✅ Niveau 6 : Compteur de nombres pairs
+- ✅ Niveau 7 : Pyramide de nombres
 - ✅ Niveau 8 : Introduction aux tableaux
 - 🔄 Niveau 9 : En cours
 
 ## Prochain exercice
+
 Niveau 9 : Recherche d'une valeur dans un tableau
