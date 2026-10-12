@@ -4,80 +4,46 @@
   "save_state_version": "0.2",
   "history_version": "0.1",
   "skill_xp_system_version": "0.2",
-  "session_date": "2026-10-05",
+  "session_date": "2026-10-12",
   "player": {
     "login": "Sevra1",
-    "global_level": 8,
-    "xp": 1050,
+    "global_level": 9,
+    "xp": 1150,
     "player_level": 3,
     "player_level_next_threshold": 1200,
-    "progression_to_next_level": "87.5%",
+    "progression_to_next_level": "95.8%",
     "title": "🔧 Codeur en herbe"
   },
   "skills": {
     "Variables": 1.5,
     "Entrées / sorties": 1.5,
     "Opérations": 2,
-    "Boucle for": 3.5,
+    "Boucle for": 4,
     "Conditions": 1.5,
     "Modulo": 1.5,
     "Compteur": 1,
-    "Boucles imbriquées": 1.5
+    "Boucles imbriquées": 1.5,
+    "Tableau": 1
   },
   "levels_completed": [
-    {
-      "level": 1,
-      "name": "Prénom et âge",
-      "status": "VALIDÉ",
-      "xp_earned": 75
-    },
-    {
-      "level": 2,
-      "name": "Calculatrice",
-      "status": "VALIDÉ",
-      "xp_earned": 100
-    },
-    {
-      "level": 3,
-      "name": "Somme de 1 à n",
-      "status": "VALIDÉ",
-      "xp_earned": 100
-    },
-    {
-      "level": 4,
-      "name": "Table de multiplication",
-      "status": "VALIDÉ",
-      "xp_earned": 100
-    },
-    {
-      "level": 5,
-      "name": "Pair ou impair (DÉFI INTERMÉDIAIRE)",
-      "status": "VALIDÉ",
-      "xp_earned": 150
-    },
-    {
-      "level": 6,
-      "name": "Compteur de nombres pairs",
-      "status": "VALIDÉ",
-      "xp_earned": 100
-    },
-    {
-      "level": 7,
-      "name": "Pyramide de nombres (boucles imbriquées)",
-      "status": "VALIDÉ",
-      "xp_earned": 125,
-      "note": "Compréhension guidée (indice 3) + consolidation autonome (Triangle avec étoiles)"
-    }
+    {"level": 1, "name": "Prénom et âge", "status": "VALIDÉ", "xp_earned": 75},
+    {"level": 2, "name": "Calculatrice", "status": "VALIDÉ", "xp_earned": 100},
+    {"level": 3, "name": "Somme de 1 à n", "status": "VALIDÉ", "xp_earned": 100},
+    {"level": 4, "name": "Table de multiplication", "status": "VALIDÉ", "xp_earned": 100},
+    {"level": 5, "name": "Pair ou impair (DÉFI INTERMÉDIAIRE)", "status": "VALIDÉ", "xp_earned": 150},
+    {"level": 6, "name": "Compteur de nombres pairs", "status": "VALIDÉ", "xp_earned": 100},
+    {"level": 7, "name": "Pyramide de nombres (boucles imbriquées)", "status": "VALIDÉ", "xp_earned": 125, "note": "Compréhension guidée (indice 3) + consolidation autonome (Triangle avec étoiles)"},
+    {"level": 8, "name": "Introduction aux tableaux", "status": "VALIDÉ", "xp_earned": 100, "note": "Travail réel conservé : premier essai, corrections et version finale avec première et dernière valeur"}
   ],
-  "current_level": 8,
-  "current_exercise": "Introduction aux tableaux",
+  "current_level": 9,
+  "current_exercise": "Recherche d'une valeur dans un tableau",
   "planned_rewards": {
     "base_xp": 100,
     "skill_increases": {
-      "Tableau": 1,
+      "Tableau": 0.5,
       "Boucle for": 0.5
     },
-    "unlock": "Tableau",
+    "unlock": "Recherche dans un tableau",
     "bonus": "variable selon la qualité de la solution"
   },
   "next_milestones": {
