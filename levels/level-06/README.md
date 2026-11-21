@@ -4,18 +4,15 @@ Statut : ✅ VALIDÉ
 
 ## Énoncé
 
-Demander un entier `n`, parcourir les nombres de `1` à `n`, afficher uniquement les nombres pairs et compter combien de nombres pairs sont présents.
+Demander un entier n, parcourir les nombres de 1 à n, afficher uniquement les nombres pairs et compter combien de nombres pairs sont présents.
 
-## Travail réalisé avec le joueur
+## Travail du joueur
 
-Le joueur a travaillé sur :
+Le code original de chaque brouillon n'a pas été conservé dans les sauvegardes ; seule la version validée est disponible.
 
-- une boucle `for` parcourant les valeurs de `1` à `n` ;
-- le test de parité avec le modulo `%` ;
-- un compteur incrémenté lorsqu'un nombre pair est trouvé ;
-- l'affichage des nombres pairs et du total.
+## Version corrigée
 
-## Version validée
+Fichier : `compteur-nombres-pairs.c`
 
 ```c
 #include <stdio.h>
@@ -54,13 +51,12 @@ int main()
 
 ## Ce qui a été appris
 
-- Utiliser le modulo pour reconnaître les nombres pairs.
-- Combiner une condition et une boucle.
-- Maintenir un compteur pendant un parcours.
+- modulo pour reconnaître un nombre pair
+- combiner condition et boucle
+- compteur `compteur++`
 
-XP gagnée : 100 XP
-Compétence : Compteur ⭐
+## Récompenses
 
-Le niveau 6 est validé.
-
-> Note : ce fichier conserve la trace pédagogique disponible. Les extraits exacts de chaque brouillon intermédiaire ne sont pas reproduits ici lorsqu'ils ne sont pas disponibles dans l'historique actuel du dépôt.
+- XP : 100 XP
+- Compétences : Boucle for +½ ⭐, Conditions +½ ⭐, Modulo +½ ⭐, Compteur ⭐ (débloquée)
+- Fonction d'inventaire : `compter_pairs` (voir `inventaire/inventaire.md`)

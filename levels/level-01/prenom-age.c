@@ -1,6 +1,3 @@
-# Niveau 1 — Prénom et âge
-
-```c
 #include <stdio.h>
 
 int main()
@@ -18,4 +15,3 @@ int main()
 
     return 0;
 }
-```

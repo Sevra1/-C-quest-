@@ -1,6 +1,3 @@
-# Niveau 2 — Calculatrice
-
-```c
 #include <stdio.h>
 
 int main()
@@ -25,4 +22,3 @@ int main()
 
     return 0;
 }
-```
