@@ -2,10 +2,11 @@
 
 ## État actuel
 - Projet : C Quest
-- Niveau global : 8
-- XP : 1050
+- Saison : C Quest (archivée — le projet continue sous le nom Code Quest, voir `code-quest/`)
+- Niveau global : 9
+- XP : 1150
 - Niveau de joueur : 3
-- Progression vers niveau 4 : 1050 / 1200 XP (87.5%)
+- Progression vers niveau 4 : 1150 / 1200 XP (95.8%)
 - Titre actuel : 🔧 Codeur en herbe
 
 ## Niveaux validés
@@ -17,19 +18,21 @@
 6. ✅ Compteur de nombres pairs
 7. ✅ Pyramide de nombres (avec indice)
 7-BIS. ✅ Triangle avec étoiles (autonome - consolidation)
+8. ✅ Introduction aux tableaux
 
 ## Niveau courant
-8. 🔄 Introduction aux tableaux (en cours)
+9. 🔄 Recherche d'une valeur dans un tableau (en cours)
 
 ## Compétences débloquées
 - Variables ⭐½
 - Entrées / sorties ⭐½
 - Opérations ⭐⭐
-- Boucle for ⭐⭐⭐½
+- Boucle for ⭐⭐⭐⭐
 - Conditions ⭐½
 - Modulo ⭐½
 - Compteur ⭐
 - Boucles imbriquées ⭐½
+- Tableau ⭐
 
 ## Paliers atteints
 - ✅ Niveau joueur 3 : 🔧 Codeur en herbe
