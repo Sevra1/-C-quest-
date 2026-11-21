@@ -25,12 +25,11 @@ Code Quest/
 
 ## Organisation actuelle du dépôt
 
-```
-README.md, ARCHITECTURE.md, CORRECTION.md
-code-quest/        sauvegarde Code Quest (save, profil, inventaire, historique, cours)
-code-quest/inventaire/  code C des fonctions débloquées
-levels/, saves/, docs/, notes/   archive de la saison C Quest (niveaux 1 à 8)
-```
+Voir le tableau « Organisation du dépôt » dans le `README.md` à la racine.
+
+## Feuille de route (projet verrouillé jusqu'au niveau 15 recommandé)
+
+v0.1 terminal simple · v0.2 profil + XP · v0.3 compétences + étoiles · v0.4 sauvegarde · v0.5 sélection d'exercices · v1.0 version complète.
 
 ## Questions ouvertes
 

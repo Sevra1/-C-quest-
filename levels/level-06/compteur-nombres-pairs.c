@@ -1,1 +1,23 @@
-#include <stdio.h>\n\nint main()\n{\n    int n;\n    int nbp = 0;\n    printf(\"Entrez un entier :\\n\");\n    scanf(\"%i\", &n);\n    \n    printf(\"Liste des nombres pairs :\\n\");\n    for(int i = 1; i <= n; i++)\n    {\n        int reste = i % 2;\n        if(reste == 0)\n        {\n            nbp++;\n            printf(\"-%i\\n\", i);\n        }\n    }\n    printf(\"Il y a %i nombres pairs\\n\", nbp);\n    return 0;\n}\n
+#include <stdio.h>
+
+int main()
+{
+    int n, compteur = 0;
+
+    printf("Entrez un entier : ");
+    scanf("%i", &n);
+
+    printf("Nombres pairs : ");
+    for(int i = 1; i <= n; i++)
+    {
+        if(i % 2 == 0)
+        {
+            printf("%i ", i);
+            compteur++;
+        }
+    }
+
+    printf("\nTotal de nombres pairs : %i\n", compteur);
+
+    return 0;
+}

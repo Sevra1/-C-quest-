@@ -1,6 +1,3 @@
-# Niveau 4 — Table de multiplication
-
-```c
 #include <stdio.h>
 
 int main()
@@ -19,4 +16,3 @@ int main()
 
     return 0;
 }
-```

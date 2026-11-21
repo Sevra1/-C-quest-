@@ -1,12 +1,12 @@
-# Niveau 7 — Pyramide de nombres et boucles imbriquées
+# Niveau 7 — Pyramide de nombres (boucles imbriquées)
 
 Statut : ✅ VALIDÉ
 
 ## Énoncé
 
-Afficher une pyramide de nombres de `1` à `n`, ligne par ligne, avec un nombre de valeurs qui augmente à chaque ligne.
+Afficher une pyramide de nombres de 1 à n, ligne par ligne, avec un nombre de valeurs qui augmente à chaque ligne.
 
-Exemple avec `n = 4` :
+Exemple avec n = 4 :
 
 ```text
 1
@@ -15,13 +15,13 @@ Exemple avec `n = 4` :
 1 2 3 4
 ```
 
-## Travail réalisé avec le joueur
+## Travail du joueur
 
-Le joueur a d'abord reçu un indice guidé pour comprendre la logique des boucles imbriquées. Il a ensuite consolidé cette notion avec une variation autonome : un triangle avec des étoiles.
+Le code original de chaque brouillon n'a pas été conservé dans les sauvegardes ; seule la version validée est disponible.
 
-Cette progression a permis de vérifier que la compréhension ne dépendait pas uniquement de la correction fournie.
+## Version corrigée
 
-## Version validée — pyramide de nombres
+Fichier : `pyramide-nombres.c`
 
 ```c
 #include <stdio.h>
@@ -46,12 +46,36 @@ int main()
 }
 ```
 
-## Consolidation autonome — triangle avec étoiles
+## Consolidation intégrée — triangle avec étoiles
 
-Le joueur a réutilisé la même logique avec deux niveaux de répétition :
+Ancien « 7-BIS ». Selon la règle des consolidations, il fait partie du niveau 7 et n'est plus un niveau séparé.
 
-- une boucle extérieure pour les lignes ;
-- une boucle intérieure pour les caractères affichés sur chaque ligne.
+Le joueur avait reçu l'indice 3 pour la pyramide, puis a réalisé ce triangle **sans indice**.
+
+Fichier : `triangle-etoiles.c`
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i, j, n;
+    
+    printf("Entrez un entier:\n ");
+    scanf("%i", &n);
+    
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+```
 
 ## Comparatif pédagogique
 
@@ -64,13 +88,12 @@ Le joueur a réutilisé la même logique avec deux niveaux de répétition :
 
 ## Ce qui a été appris
 
-- Construire des boucles imbriquées.
-- Comprendre le lien entre la ligne courante et le nombre d'éléments affichés.
-- Réutiliser une structure algorithmique dans un nouvel exercice.
+- boucle extérieure = lignes, boucle intérieure = colonnes
+- `j <= i` : nombre de colonnes variable
+- transfert autonome à un nouveau motif (étoiles)
 
-XP gagnée : 125 XP
-Compétences : Boucle `for` +½ ⭐, Boucles imbriquées ⭐
+## Récompenses
 
-Le niveau 7 est validé.
-
-> Note : ce fichier conserve la trace pédagogique disponible. Les extraits exacts de chaque brouillon intermédiaire ne sont pas reproduits ici lorsqu'ils ne sont pas disponibles dans l'historique actuel du dépôt.
+- XP : 300 XP = pyramide 125 XP (100 + 25 bonus) + consolidation 175 XP
+- Compétences : Boucle for +½ ⭐, Boucles imbriquées ⭐½ (débloquée)
+- Fonction d'inventaire : `afficher_pyramide` (voir `inventaire/inventaire.md`)

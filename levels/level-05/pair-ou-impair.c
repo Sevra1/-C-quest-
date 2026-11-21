@@ -1,6 +1,3 @@
-# Niveau 5 — Pair ou impair
-
-```c
 #include <stdio.h>
 
 int main()
@@ -31,4 +28,3 @@ int main()
 
     return 0;
 }
-```

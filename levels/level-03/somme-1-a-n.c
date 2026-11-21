@@ -1,6 +1,3 @@
-# Niveau 3 — Somme de 1 à n
-
-```c
 #include <stdio.h>
 
 int main()
@@ -14,11 +11,9 @@ int main()
     for(int i = 1; i <= n; i++)
     {
         somme += i;
-        printf("%i\n", i);
     }
 
     printf("La somme des nombres allant de 1 jusqu'à %i est : %i\n", n, somme);
 
     return 0;
 }
-```
